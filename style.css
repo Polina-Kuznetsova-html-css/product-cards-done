@@ -1,0 +1,256 @@
+body {
+    min-height: 100vh;
+    background:#adadad;
+    padding: 60px 20px;
+}
+
+.container {
+    margin: 0 auto 0;
+    background: #fff;
+    width: 800px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15), 0 3px 6px rgba(0,0,0,0.15);
+}
+
+@media (max-width: 1000px){
+    .container {
+        width: 80%;
+    }
+}
+
+.menu {
+    display: inline-flex;
+    background-color: #f7f5f6;
+    width: 800px;
+}
+.menu img {
+    height: 30px;
+    width: 30px;
+    align-items: center;
+    padding: 30px;
+    margin-left: 60px;
+}
+
+.left {
+    padding: 60px;
+    border-bottom: 3px solid rgba(255, 165, 0, 0.1);
+}
+
+.left img {
+    width: 100%;
+}
+.left img {
+    transition: 1s ease-in-out;
+}
+.left img:hover {
+    transform: scale(1.1);
+}
+
+.hover-image-3 {
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    line-height: 0;
+}
+
+.left img img {
+    display: block;
+}
+
+.cont-details {
+    display: flex;
+}
+
+.details {
+    height: auto;
+    width: 90%;
+    vertical-align: middle;
+    margin-top: 50px;
+    margin-left: 18px;
+}
+.det-img img {
+    border: 0.2px solid #777;
+    padding: 0;
+}
+.det-img img {
+    transition: 1s ease-in-out;
+}
+.det-img img:hover {
+    transform: scale(1.1);
+}
+
+
+.right {
+    border-left: 2px solid rgba(255, 165, 0, 0.1);
+    padding: 40px;
+    padding-bottom: 0;
+    background: #f7f5f6;
+}
+
+.categorie {
+    margin-top: 10px;
+    font-size: 16pt;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    color: #FF9800;
+}
+
+.product {
+    font-size: 25pt;
+    margin-top: 10px;
+    font-weight: 500;
+    color: #666;
+    font-family: "Montserrat", sans-serif;
+}
+
+.desc {
+    margin-top: 20px;
+    color: #777;
+}
+
+.desc li {
+    font-size: 10pt;
+    font-family: "Montserrat", sans-serif;
+    margin: 15px -5px;
+}
+
+.title-colour {
+    margin-top: 25px;
+    font-size: 13pt;
+    font-family: "Montserrat", sans-serif;
+}
+
+.color-black {
+    display: inline-block;
+    cursor: pointer;
+    padding: 14px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+
+/*.color-white {*/
+/*    cursor: pointer;*/
+/*    display: inline-block;*/
+/*    padding: 14px;*/
+/*    background-color: #fff;*/
+/*    color: #fff;*/
+/*    margin-left: 15px;*/
+/*    border-radius: 30px;*/
+/*    border: 1px solid #a8a8a8;*/
+/*}*/
+
+.price {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    display: inline-flex;
+}
+.price-n {
+    color: #FF9800;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.buy {
+    display: inline-flex;
+    position: absolute;
+    right: 40px;
+    bottom: 10px;
+    background-color: #ffa501;
+    padding: 14px 35px 12px 35px;
+    color: #fff;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    transition: all .6s;
+    border: 3px solid #ffa501;
+    cursor: pointer;
+}
+
+.buy:hover {
+    color: #ffa501;
+    background-color: #fff;
+}
+
+.container-p-z {
+    display: flex;
+}
+.price {
+    margin-left: 21px;
+}
+
+.star {
+    margin-top: 13px;
+   text-align: left;
+    padding: 10px;
+}
+
+.stars {
+    cursor: pointer;
+}
+.stars:hover .star polygon {
+    fill: #ffd055 !important;
+}
+.stars .star {
+    float: left;
+}
+.stars .star polygon {
+    fill: #d8d8d8;
+}
+.stars .star:hover ~ .star polygon {
+    fill: #d8d8d8 !important;
+}
+.stars[data-stars] .star polygon {
+    fill: #ffd055;
+}
+.stars[data-stars="1"] .star:nth-child(1) ~ .star polygon {
+    fill: #d8d8d8;
+}
+.stars[data-stars="2"] .star:nth-child(2) ~ .star polygon {
+    fill: #d8d8d8;
+}
+.stars[data-stars="3"] .star:nth-child(3) ~ .star polygon {
+    fill: #d8d8d8;
+}
+.stars[data-stars="4"] .star:nth-child(4) ~ .star polygon {
+    fill: #d8d8d8;
+}
+.stars[data-stars="5"] .star:nth-child(5) ~ .star polygon {
+    fill: #d8d8d8;
+}
+
+.info {
+    background-color: #f7f5f6;
+    width: 800px;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+}
+.textcols {
+    white-space: nowrap;
+    font-size: 0;
+    margin-left: 40px;
+    line-height: 20px;
+}
+.textcols-item {
+    white-space: normal;
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    margin-right: 5%;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+.textcols .textcols-item:last-child {
+    margin-right: 0 ;
+}
+.textcols-item h3 {
+    color: #777;
+}
